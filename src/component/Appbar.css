@@ -3,21 +3,65 @@ nav{
     top: 0;
     left: 0;
     position: fixed;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: #4682B4;
-    max-height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 100px;
+    background: rgba(255, 255, 255, 0);
+}
+span{
+    color: white;
 }
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     width: fit-content;
+    color: white;
 }
 li{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
     list-style-type: none;
     color: white;
+    cursor: pointer;
+}
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* Options: auto, thin, none */
+}
+li:hover{
+    color: blue;
+}
+div{
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+}
+.active{
+    color: blue;
 }
